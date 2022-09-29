@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No.10 課題1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_top">
+        <h1>お問い合わせ 入力内容</h1>
+        <p>お問い合わせ内容をご入力の上、「確認へ」ボタンをクリックしてください。</p>
+      </div>
+      <form action="mailto:esample@gmail.com" enctype="text/plain" method="POST">
+        <div class="form_wrapper">
+          <div class="field-item">
+            <div class="field">
+              <p>お名前</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <input type="text" name="漢字" placeholder="例)　山田太郎" autofocus required />
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>ふりがな</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <input type="text" name="ふりがな" placeholder="例)　やまだたろう" required />
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>メールアドレス</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <input type="text" name="mail" placeholder="例)　guest@example.com" required />
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>電話番号</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <input type="text" name="mail" placeholder="例)　090-1234-5678" required />
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>生年月日</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <input type="text" placeholder="年/月/日" onfocus="type='date'" onfocusout="type='text'" required />
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>性別</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="sex-select">
+              <label for="man"><input type="radio" name="sex" id="man" required />男性</label>
+
+              <label for="woman"> <input type="radio" name="sex" id="woman" required />女性</label>
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>お問い合わせ項目</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <select required>
+                <option value="0" disabled selected>選択してください</option>
+                <option value="1">ご依頼</option>
+                <option value="2">質問</option>
+                <option value="3">その他</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-item">
+            <div class="field">
+              <p>お問い合わせ内容</p>
+              <div class="required">必須</div>
+            </div>
+            <div class="item">
+              <textarea required placeholder="お問い合わせ内容を入力" rows="5"> </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="submit">
+          <button type="submit">確認画面へ</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
