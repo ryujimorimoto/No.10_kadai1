@@ -40,6 +40,7 @@ form {
   padding: 40px;
   max-width: 100%;
   margin: 0 auto;
+  border-radius: 10px;
   background-color: rgba(188, 188, 188, 0.212);
 }
 
